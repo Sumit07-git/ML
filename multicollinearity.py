@@ -5,13 +5,13 @@ import matplotlib.pyplot as plt
 df= pd.read_csv('Advertising.csv', index_col=0)
 X= df[['TV','Radio','Newspaper']]
 y=df['Sales']
-# print(df.head())
+print(df.head())
 
 X=sm.add_constant(X)
 model=sm.OLS(y,X).fit()
-# print(model.summary())
+print(model.summary())
 
-# print(X.iloc[:,1:].corr())
+print(X.iloc[:,1:].corr())
 
 df_sal=pd.read_csv('Salary_Data.csv')
 print(df_sal.head())
