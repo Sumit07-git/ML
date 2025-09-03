@@ -1,1 +1,1 @@
-df.to_csv('Test1.csv')
+import statsmodel.api as sm
